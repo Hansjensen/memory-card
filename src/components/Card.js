@@ -7,7 +7,7 @@ import { arrayShuffle } from './utils'
 
 
 const BuildCardGrid = ({waves, handleCardClick}) => {
-    console.log(waves)
+    
 
     let wavesShuffle = arrayShuffle(waves)
 

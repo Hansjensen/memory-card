@@ -1,7 +1,7 @@
 
 import './App.css';
 import "@fontsource/open-sans/500.css";
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import BuildCardGrid from './components/Card';
 import Header from './components/Header';
 import teahupoo from "../src/images/teahupoo.jpeg"
@@ -97,14 +97,19 @@ function App() {
           }
           return x    
     })
-    
-    setWaves(newArray)
-    setScore((score) => score + 1)
-    if (score > highScore) {
-      setHighScore(score)
-    }
-  }
 
+    setScore((score) => score + 1);
+  
+  } 
+  
+  /* Match highscore if the current score matches or exceeds it*/
+  useEffect(() => {
+    if (score >= highScore) {
+      setHighScore(score);
+    }}, [score, highScore]
+  )
+
+   
 
   return (
     <div>
