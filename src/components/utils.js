@@ -1,3 +1,5 @@
+
+
 function arrayShuffle(arr) {
     const length = arr.length
 
@@ -10,8 +12,8 @@ function arrayShuffle(arr) {
     return arr;
 }
 
-function selectedCheck() {
-    
-}
+
+
+
 
 export {arrayShuffle}

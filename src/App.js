@@ -16,7 +16,7 @@ import mavericks from "../src/images/mavericks.jpeg"
 import pipeline from "../src/images/pipeline.jpeg"
 import skeletonbay from "../src/images/skeletonbay.jpeg"
 import waimeabay from "../src/images/waimeabay.jpeg"
-
+import { gameOver } from './components/utils';
 
 
 
@@ -89,16 +89,29 @@ function App() {
   const [highScore, setHighScore] = useState(0)
   
   const handleCardClick = (e) => {
-
+    
+    let gameOver = false
 
     let newArray = waves.map(x => {
           if(x.title === e.currentTarget.id) {
+            if(x.selected === true) {
+              gameOver = true
+            } else{
             return Object.assign({}, x, {selected: true})
+            }
           }
           return x    
     })
-
+    
+    if (gameOver) {
+      setWaves(waves.map((e) => ({...e, selected: false})))
+      setScore(0)
+      gameOver = false
+      return
+    } else {
+    setWaves(newArray)
     setScore((score) => score + 1);
+    }
   
   } 
   
