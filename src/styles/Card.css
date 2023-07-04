@@ -17,7 +17,7 @@ body {
 }
 .card:hover { 
     cursor: pointer;
-    box-shadow: none;
+    box-shadow: 2px 2px 0px rgb(23, 23, 23);
  }
 
 .imageDiv {

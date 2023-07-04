@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+  }
+
+.start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    background-color: rgba(186, 219, 219, 0.525);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#startTitle {
+    margin:30px;
+    font-size: 5rem;
+    text-shadow: 0px 0px 1px rgb(224, 224, 224);
+}
+
+#startIntro {
+    font-size: 1.5rem;
+    margin: 100px;
+}
+
+#startButton {
+    width: 400px;
+    height: 100px;
+    background-color: rgb(239, 239, 239);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px rgb(228, 228, 228);
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+#startButton:hover {
+    cursor: pointer;
+}

@@ -16,7 +16,7 @@ import mavericks from "../src/images/mavericks.jpeg"
 import pipeline from "../src/images/pipeline.jpeg"
 import skeletonbay from "../src/images/skeletonbay.jpeg"
 import waimeabay from "../src/images/waimeabay.jpeg"
-import { gameOver } from './components/utils';
+import StartGame from './components/StartGame';
 
 
 
@@ -87,6 +87,7 @@ function App() {
   ])
   const [score, setScore] = useState(0)
   const [highScore, setHighScore] = useState(0)
+  const [start, setStart] = useState(true)
   
   const handleCardClick = (e) => {
     
@@ -114,6 +115,10 @@ function App() {
     }
   
   } 
+
+  const handleStartCLick = () => {
+    setStart((current) => !current)
+  }
   
   /* Match highscore if the current score matches or exceeds it*/
   useEffect(() => {
@@ -126,10 +131,19 @@ function App() {
 
   return (
     <div>
-    <Header score={score} highScore={highScore}/>
-    <div className='gridWrapper'>
-    <BuildCardGrid waves={waves} handleCardClick={handleCardClick}/>
-      </div>
+    {start &&
+     
+        <StartGame handleStartCLick={handleStartCLick}/>
+        }
+        
+      {!start &&
+          <>
+          <Header score={score} highScore={highScore}/>
+          <div className='gridWrapper'>
+          <BuildCardGrid waves={waves} handleCardClick={handleCardClick}/>
+          </div>
+          </>
+      }
   </div>
   )
   
