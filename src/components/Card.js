@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Card.css'
+import { arrayShuffle } from './utils'
 
 
 
@@ -7,7 +8,9 @@ import '../styles/Card.css'
 
 const BuildCardGrid = ({waves, handleCardClick}) => {
 
-    const waveGrid = waves.map((wave) => (
+    let wavesShuffle = arrayShuffle(waves)
+
+    const waveGrid = wavesShuffle.map((wave) => (
         <Card waves={wave} handleCardClick={handleCardClick}/>
     ))
 

@@ -19,12 +19,13 @@ import waimeabay from "../src/images/waimeabay.jpeg"
 
 
 
+
 const handleCardClick = () => {
-  return console.log('ok')
+  
 }
 
 function App() {
-  const [waves, setWaves] = useState([
+  const [waves] = useState([
     {  
         id: 1,
         title: "Teahupoo",
@@ -87,9 +88,14 @@ function App() {
         selected: false
     }
   ])
+  const [score, setScore] = useState(0)
+  const [highScore, setHighScore] = useState(0)
+
+
+
   return (
     <div>
-    <Header/>
+    <Header score={score} highScore={highScore}/>
     <div className='gridWrapper'>
     <BuildCardGrid waves={waves} handleCardClick={handleCardClick}/>
       </div>
