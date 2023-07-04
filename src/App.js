@@ -20,12 +20,9 @@ import waimeabay from "../src/images/waimeabay.jpeg"
 
 
 
-const handleCardClick = () => {
-  
-}
 
 function App() {
-  const [waves] = useState([
+  const [waves, setWaves] = useState([
     {  
         id: 1,
         title: "Teahupoo",
@@ -90,7 +87,23 @@ function App() {
   ])
   const [score, setScore] = useState(0)
   const [highScore, setHighScore] = useState(0)
+  
+  const handleCardClick = (e) => {
 
+
+    let newArray = waves.map(x => {
+          if(x.title === e.currentTarget.id) {
+            return Object.assign({}, x, {selected: true})
+          }
+          return x    
+    })
+    
+    setWaves(newArray)
+    setScore((score) => score + 1)
+    if (score > highScore) {
+      setHighScore(score)
+    }
+  }
 
 
   return (

@@ -7,14 +7,17 @@ import { arrayShuffle } from './utils'
 
 
 const BuildCardGrid = ({waves, handleCardClick}) => {
+    console.log(waves)
 
     let wavesShuffle = arrayShuffle(waves)
 
     const waveGrid = wavesShuffle.map((wave) => (
         <Card waves={wave} handleCardClick={handleCardClick}/>
     ))
+    
 
    return <div id="waveGrid">{waveGrid}</div>
+
 
             
     
@@ -23,7 +26,7 @@ const BuildCardGrid = ({waves, handleCardClick}) => {
 const Card = ({waves, handleCardClick}) => {
 
     return (
-        <div className="card" onClick={handleCardClick}>
+        <div className="card" onClick={handleCardClick} id={waves.title}>
             <div className="imageDiv">
                 <img
                 src={waves.img}

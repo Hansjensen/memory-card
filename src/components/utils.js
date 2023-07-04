@@ -10,4 +10,8 @@ function arrayShuffle(arr) {
     return arr;
 }
 
+function selectedCheck() {
+    
+}
+
 export {arrayShuffle}
