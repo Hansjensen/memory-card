@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.a00287b1.css",
+    "main.js": "/memory-card/static/js/main.fe5d144e.js",
+    "static/js/787.d6a8b40f.chunk.js": "/memory-card/static/js/787.d6a8b40f.chunk.js",
+    "static/media/open-sans-cyrillic-ext-500-normal.woff2": "/memory-card/static/media/open-sans-cyrillic-ext-500-normal.94b5556043d104b673e3.woff2",
+    "static/media/open-sans-latin-500-normal.woff2": "/memory-card/static/media/open-sans-latin-500-normal.b8d62943d0a753a0e028.woff2",
+    "static/media/open-sans-cyrillic-ext-500-normal.woff": "/memory-card/static/media/open-sans-cyrillic-ext-500-normal.db8d412d844def0c6f72.woff",
+    "static/media/open-sans-latin-500-normal.woff": "/memory-card/static/media/open-sans-latin-500-normal.ec143da34fc5b9ea922f.woff",
+    "static/media/open-sans-latin-ext-500-normal.woff2": "/memory-card/static/media/open-sans-latin-ext-500-normal.6f6b8357fbd058689336.woff2",
+    "static/media/open-sans-latin-ext-500-normal.woff": "/memory-card/static/media/open-sans-latin-ext-500-normal.b9393e494e1856a5c8de.woff",
+    "static/media/open-sans-cyrillic-500-normal.woff2": "/memory-card/static/media/open-sans-cyrillic-500-normal.2760fe2ec0422edc388e.woff2",
+    "static/media/open-sans-greek-500-normal.woff2": "/memory-card/static/media/open-sans-greek-500-normal.aa7a8b7b93046f678d9f.woff2",
+    "static/media/open-sans-cyrillic-500-normal.woff": "/memory-card/static/media/open-sans-cyrillic-500-normal.4047d900d52c92ccc387.woff",
+    "static/media/open-sans-hebrew-500-normal.woff2": "/memory-card/static/media/open-sans-hebrew-500-normal.38f82c0bfa2966def431.woff2",
+    "static/media/open-sans-vietnamese-500-normal.woff2": "/memory-card/static/media/open-sans-vietnamese-500-normal.3ff2bbd19d39a8112b15.woff2",
+    "static/media/open-sans-greek-500-normal.woff": "/memory-card/static/media/open-sans-greek-500-normal.67955fb3e2d264281a43.woff",
+    "static/media/open-sans-hebrew-500-normal.woff": "/memory-card/static/media/open-sans-hebrew-500-normal.d481965f90965d4990ff.woff",
+    "static/media/open-sans-vietnamese-500-normal.woff": "/memory-card/static/media/open-sans-vietnamese-500-normal.67243d102a8383100d55.woff",
+    "static/media/open-sans-greek-ext-500-normal.woff2": "/memory-card/static/media/open-sans-greek-ext-500-normal.7c718aac8d1519b7eca7.woff2",
+    "static/media/open-sans-greek-ext-500-normal.woff": "/memory-card/static/media/open-sans-greek-ext-500-normal.5521ffd424f55054e624.woff",
+    "index.html": "/memory-card/index.html",
+    "main.a00287b1.css.map": "/memory-card/static/css/main.a00287b1.css.map",
+    "main.fe5d144e.js.map": "/memory-card/static/js/main.fe5d144e.js.map",
+    "787.d6a8b40f.chunk.js.map": "/memory-card/static/js/787.d6a8b40f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a00287b1.css",
+    "static/js/main.fe5d144e.js"
+  ]
+}
